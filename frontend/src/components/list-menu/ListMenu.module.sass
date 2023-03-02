@@ -1,0 +1,43 @@
+.btn
+    width: 100%
+    padding: 15px
+    display: flex
+    align-items: center
+    border: none
+    border-radius: 5px
+    background-color: transparent
+    font-size: 18px
+    opacity: .6
+    cursor: pointer
+    svg
+        margin-right: 10px
+    &:hover
+        opacity: 1
+    &:active
+        background-color: darken(#f4f6f8, 5%)
+
+.item
+    padding: 15px
+    margin-bottom: 5px
+    display: flex
+    align-items: center
+    border-radius: 5px
+    cursor: pointer
+    span
+        margin-right: 10px
+    &.active
+        background-color: #fff
+        .remove
+            &:hover
+                opacity: 0.9
+
+.name
+    flex: 1
+    text-overflow: ellipsis
+    overflow: hidden
+
+.remove
+    opacity: .1
+    transition: opacity 0.15s ease-in-out
+    &:hover
+        opacity: .25
