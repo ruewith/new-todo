@@ -2,7 +2,7 @@ import axios from "axios";
 import { ColorItem, TaskItem, ListItem } from "../@types";
 
 const instance = axios.create({
-    baseURL: `http://localhost:3333`,
+    baseURL: `http://localhost:5000`,
     withCredentials: true,
 });
 
